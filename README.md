@@ -1,5 +1,8 @@
 # SwiftlyBhopTimer MetaMod Helper
 
+> [!IMPORTANT]
+> This project was created through Vibe Coding. You are free to fork each project and copy, customize, or develop it however you like.
+
 Small MetaMod:Source helper for SwiftlyBhopTimer.
 
 ## What This Helper Is
