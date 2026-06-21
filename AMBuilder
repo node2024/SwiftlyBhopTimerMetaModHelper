@@ -1,0 +1,23 @@
+# vim: set sts=2 ts=8 sw=2 tw=99 et ft=python:
+import os
+
+MMSPlugin.plugin_name = 'swiftlybhoptimer_helper'
+MMSPlugin.plugin_alias = 'swiftlybhoptimer_helper'
+
+for sdk_target in MMSPlugin.sdk_targets:
+  sdk = sdk_target.sdk
+  cxx = sdk_target.cxx
+
+  binary = MMSPlugin.HL2Library(builder, cxx, MMSPlugin.plugin_name, sdk)
+  binary.compiler.defines += ['SBT_HELPER_VERSION="0.1.0"']
+  binary.sources += [
+    'src/swiftlybhoptimer_helper.cpp',
+    os.path.join(builder.sourcePath, 'generated', 'network_connection.pb.cc'),
+    os.path.join(builder.sourcePath, 'generated', 'networkbasetypes.pb.cc'),
+  ]
+  binary.compiler.cxxincludes += [
+    os.path.join(builder.sourcePath, 'generated'),
+  ]
+
+  nodes = builder.Add(binary)
+  MMSPlugin.binaries += [nodes]
