@@ -5,6 +5,11 @@
 
 SwiftlyBhopTimer 用の小さな MetaMod:Source 補助プラグインです。
 
+## 関連リポジトリ
+
+- [SwiftlyBhopTimer](https://github.com/node2024/SwiftlyBhopTimer)
+- [SwiftlyBhopTimer MetaMod Helper](https://github.com/node2024/SwiftlyBhopTimerMetaModHelper)
+
 ## Helper とは
 
 Helper は、SwiftlyBhopTimer 本体から呼び出される native 補助レイヤーです。

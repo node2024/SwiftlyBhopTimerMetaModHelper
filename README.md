@@ -3,7 +3,15 @@
 > [!IMPORTANT]
 > This project was created through Vibe Coding. You are free to fork each project and copy, customize, or develop it however you like.
 
+> [!NOTE]
+> This English README is machine-translated. The Japanese README is the primary version.
+
 Small MetaMod:Source helper for SwiftlyBhopTimer.
+
+## Related Repositories
+
+- [SwiftlyBhopTimer](https://github.com/node2024/SwiftlyBhopTimer)
+- [SwiftlyBhopTimer MetaMod Helper](https://github.com/node2024/SwiftlyBhopTimerMetaModHelper)
 
 ## What This Helper Is
 
